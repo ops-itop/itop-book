@@ -70,8 +70,8 @@
 \fi
 \hypersetup{breaklinks=true,
             bookmarks=true,
-            pdfauthor={},
-            pdftitle={},
+            pdfauthor={An He},
+            pdftitle={iTop实施杂记},
             colorlinks=true,
             urlcolor=blue,
             linkcolor=magenta,
@@ -82,7 +82,9 @@
 
 
 
-\date{}
+\title{iTop实施杂记}
+\author{An He}
+\date{\today}
 
 \usepackage{fancyhdr}
 %\usepackage{lastpage}
@@ -99,6 +101,10 @@
 \thispagestyle{empty}
 \begin{tikzpicture}[remember picture,overlay]
 \node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{Pictures/background}};
+\draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]
+{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}
+{\centering iTop实施杂记\\[13pt] % Book title
+{\huge An He} % Author name
 }};
 \end{tikzpicture}
 \vfill
@@ -108,9 +114,24 @@
 %----------------------------------------------------------------------------------------
 %	COPYRIGHT PAGE
 %----------------------------------------------------------------------------------------
+\newpage
+~\vfill
+\thispagestyle{empty}
+
+\noindent Copyright \copyright\ \the\year\  An He\\ % Copyright notice
+
+\noindent \textsc{Published by \LaTeX}\\ % Publisher
+\noindent \textsc{https://github.com/annProg/itop-book}\\ % URL
+
+\noindent Licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License (the ``License''). You may not use this file except in compliance with the License. You may obtain a copy of the License at \url{http://creativecommons.org/licenses/by-nc/3.0}. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \textsc{``as is'' basis, without warranties or conditions of any kind}, either express or implied. See the License for the specific language governing permissions and limitations under the License.\\ % License information
+
+\noindent \textit{最后编译日期, \today\ \currenttime } % Printing/edition date
 
 
     
+\chapter*{前言}
+\addcontentsline{toc}{chapter}{前言}
+iTop实施杂记
 
 
 {
@@ -119,20 +140,21 @@
 \tableofcontents
 \addcontentsline{toc}{chapter}{目录}
 }
+\listoftables
+\addcontentsline{toc}{chapter}{表格列表}
+\listoffigures
+\addcontentsline{toc}{chapter}{插图列表}
 
 
 
 \mainmatter
     % 在此命令之后的页码为阿拉伯数字
     % 以下为正文
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+\chapter{SSO集成方法}\label{ssoux96c6ux6210ux65b9ux6cd5}
 
-title: iTop实施杂记 author: \# 作者（数组） - An He date: \today     \#
-日期 copyright: true \# 是否生成版权页 lof: true \# 是否生成插图列表页
-lot: true \# 是否生成表格列表页 homepage:
-https://github.com/annProg/itop-book publisher: pandoc-template \#
-epub用 rights: ? 2017 An He, CC BY-NC \# epub用 \# preface用于生成前言
-preface: `iTop实施杂记'
+\chapter{CI校验}\label{ciux6821ux9a8c}
+
+\chapter{action-shell-exec}\label{action-shell-exec}
 
 \backmatter
 
