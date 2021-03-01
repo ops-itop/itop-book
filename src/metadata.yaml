@@ -1,6 +1,6 @@
 ---
-title: iTop文档翻译及实施杂记
-subtitle: 副标题
+title: iTop实施杂记及文档翻译
+subtitle: 基于iTop构建运维平台
 author:          # 作者（数组）
   - An He
 date: \today     # 日期
@@ -11,7 +11,7 @@ identifier:                      # epub用
   - scheme: DOI
     text: doi:10.234234.234/33
 publisher: PanBook       # epub用
-rights: © 2020 An He, CC BY-NC   # epub用
+rights: © 2021 An He, CC BY-NC   # epub用
 cover-image: images/cover.png    # epub用
 # 不引用，但是显示在参考文献列表里。通配符 @* 表示全部在列表里显示  
 nocite: |
