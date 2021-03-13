@@ -1,4 +1,4 @@
-COVER ?= R
+COVER ?= 30
 DEVICE ?= pc
 DEBUG ?= 
 HIGHLIGHT ?= --highlight-style=tango
@@ -9,7 +9,7 @@ all: ctexbook elegantbook
 ctexbook:
 	panbook book -V cover:$(COVER) -V device:$(DEVICE) $(DEBUG) $(HIGHLIGHT) $(CJK)
 elegantbook:
-	panbook book --style=elegantbook -V device:$(DEVICE) $(DEBUG) $(HIGHLIGHT) $(CJK)
+	panbook book --style=elegantbook -V cover:images/itop-cover.jpg -V logo:images/itop-logo.png -V device:$(DEVICE) $(DEBUG) $(HIGHLIGHT) $(CJK)
 
 clean:
 	panbook clean
