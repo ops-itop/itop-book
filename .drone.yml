@@ -20,3 +20,20 @@ steps:
     dest: 172.17.0.1::panbook
   depends_on:
   - build
+
+- name: slide-itop-share
+  image: ann17/panbook:latest
+  pull: if-not-exists
+  commands:
+  - cd slides/itop-share
+  - make all-theme
+  depends_on:
+  - build
+- name: publish-itop-share
+  image: annprog/rsync:latest
+  pull: if-not-exists
+  settings:
+    src: slides/itop-share/build/*.pdf
+    dest: 172.17.0.1::panbook
+  depends_on:
+  - slide-itop-share

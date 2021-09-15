@@ -7,3 +7,7 @@ iTop CMDB 文档翻译及实施杂记
 预览：
 - https://panbook.annhe.net/pub/itop-book-book-elegantbook-pc.pdf
 - https://panbook.annhe.net/pub/itop-book-book-ctexbook-pc.pdf
+
+## Slides
+
+- https://panbook.annhe.net/pub/itop-share-slide-metropolis.pdf
