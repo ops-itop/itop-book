@@ -12,5 +12,6 @@ all-theme:
 	for theme in `panbook slide -l`;do \
 		panbook slide --style=$$theme $(DEBUG) $(HIGHLIGHT) $(CJK); \
 	done
+	panbook slide --style=metropolis $(DEBUG) $(HIGHLIGHT) $(CJK)
 clean:
 	panbook clean
