@@ -5,4 +5,5 @@ author:          # 作者（数组）
   - 何安
 date: \today     # 日期
 location: Beijing China
+toc: true
 ...
