@@ -45,7 +45,7 @@ IT 活动大致可以划分为以下几类：
 - 事件跟踪和处理，如监控报警事件，用户报障
 - 变更跟踪和处理，变更可以是用户需求或者事件引起的，也可以是 IT 团队根据主动发现的问题发起的，或者软件版本升级等
 
-这些正是 ITIL^[ITIL 是 CCTA（英国国家电脑局）于 1980 年开发的一套 IT 服务管理标准库。它把英国在 IT 管理方面的方法归纳起来，变成规范，为企业的 IT 部门提供一套从计划、研发、实施到运维的标准方法] 总结的 需求管理，事件管理以及变更管理。
+这些正是 ITIL^[ITIL 是 CCTA（英国国家电脑局）于 1980 年开发的一套 IT 服务管理（IT Service Management，ITSM）标准库。它把英国在 IT 管理方面的方法归纳起来，变成规范，为企业的 IT 部门提供一套从计划、研发、实施到运维的标准方法] 总结的 需求管理，事件管理以及变更管理。
 
 ## CMDB 是什么
 CMDB 是配置管理数据库（Configuration Management Database）的缩写。CMDB 是一类产品形式，有以下特点或者功能：
@@ -60,13 +60,16 @@ CMDB 是 IT 组织的情报中心。丰富，完整，准确的 CMDB 数据是�
 ## iTop 是什么
 
 :::::{.columns}
-:::{.column}
-![](images/itop-logo.png)
+:::{.column width=40%}
+![](images/itop-logo.svg)
 :::
-:::{.column}
+:::{.column width=40%}
+- iTop stands for IT Operational Portal（IT 运营门户） 
 - iTop 是一个 ITIL 软件
 - iTop 是 CMDB
-- iTop 是 ITSM^[IT 服务管理（IT Service Management）是一套帮助企业对 IT 系统的规划、研发、实施和运营进行有效管理的方法，是一套方法论。ITSM 起源于 ITIL。] 工具
+- iTop 是 ITSM 工具
+:::
+:::::
 
 ## 数据模型
 
