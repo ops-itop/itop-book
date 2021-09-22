@@ -10,3 +10,4 @@ build
 *.xdv
 *.dvi
 *.thm
+!src/images/*

@@ -76,11 +76,22 @@ CMDB 是 IT 组织的情报中心。丰富，完整，准确的 CMDB 数据是�
 
 ## 数据模型
 
+## 关联关系-影响分析
+
+![](images/impacts.pdf)
+
 ## 收益
 
 # iTop 定制开发
 
+## iTop 架构
+![](images/itop-architecture.pdf)
+
 ## 自定义模型
+
+### 查看数据模型
+
+![](images/classlnk.pdf)
 
 ## 集成其他系统
 
@@ -89,3 +100,11 @@ CMDB 是 IT 组织的情报中心。丰富，完整，准确的 CMDB 数据是�
 ## URL 自助监控
 
 ## 央行金融业数据上报
+
+## 参考资料
+
+- Combodo 主页：https://www.combodo.com/
+- 源码：https://github.com/Combodo/iTop
+- 下载：https://sourceforge.net/projects/itop/
+- 文档：https://www.itophub.io/wiki/page
+- iTopHub：https://www.itophub.io/
