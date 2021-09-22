@@ -85,7 +85,8 @@ CMDB 是 IT 组织的情报中心。丰富，完整，准确的 CMDB 数据是�
 # iTop 定制开发
 
 ## iTop 架构
-![](images/itop-architecture.pdf)
+
+![iTop 架构图，来自 iTop 官方 Wiki](images/itop-architecture.pdf){width=70%}
 
 ## 自定义模型
 
