@@ -112,6 +112,8 @@ CMDB 是 IT 组织的情报中心。丰富，完整，准确的 CMDB 数据是�
 
 ## 参考资料
 
+本次分享结束，感谢您的聆听。通过以下链接可以获取 iTop 的更多信息。
+
 - Combodo 主页：https://www.combodo.com/
 - 源码：https://github.com/Combodo/iTop
 - 下载：https://sourceforge.net/projects/itop/
