@@ -88,7 +88,7 @@ CMDB 是 IT 组织的情报中心。丰富，完整，准确的 CMDB 数据是�
 
 ::::{.columns}
 :::{.column}
-![](images/itop-architecture.pdf){width=70%}
+![](images/itop-architecture.pdf)
 :::
 :::{.column}
 - 模型定制
