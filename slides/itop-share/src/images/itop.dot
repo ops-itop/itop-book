@@ -1,0 +1,47 @@
+digraph G {
+	// 因使用了 svg 图像，需要插件支持。
+	// 编译graphviz时需要 --with-rsvg=yes --with-pangocairo=yes 选项，并且在Ubuntu上需要安装 libpango1.0-dev
+	rankdir = LR;
+	node [shape="record"];
+	problem1[label=<<table border="1" cellborder="0" style="rounded" align="left"><tr><td bgcolor="yellow"><b><font point-size="17">邮件处理流程</font></b></td></tr>
+	<tr><td>难追踪</td></tr>
+	<tr><td>效率低</td></tr>
+	<tr><td>沟通成本高</td></tr>
+	<tr><td>难统计</td></tr>
+	</table>>,style="rounded",shape="none"];
+	problem2[label=<<table border="1" cellborder="0" style="rounded" align="left"><tr><td bgcolor="yellow"><b><font point-size="17">Wiki管理资源</font></b></td></tr>
+	<tr><td>难准确</td></tr>
+	<tr><td>不敢用</td></tr>
+	<tr><td>价值低</td></tr>
+	<tr><td>维护成本高</td></tr>
+	<tr><td>资源闲置浪费</td></tr>
+	</table>>,style="rounded",shape="none"];
+
+	itil[label=<<b>ITIL</b>>, fillcolor="lightskyblue:cyan", style="filled", shape="tab"];
+	cmdb[label=<<b>CMDB</b>>, fillcolor="lightskyblue:cyan", style="filled", shape="cylinder"];
+		
+	problem1 -> itil;
+	problem2 -> cmdb;
+	
+	itil_target[label=<<table border="1" cellborder="0" style="rounded" align="left"><tr><td bgcolor="yellow"><b><font point-size="17">规范流程</font></b></td></tr>
+	<tr><td>请求管理</td></tr>
+	<tr><td>事件管理</td></tr>
+	<tr><td>变更管理</td></tr>
+	<tr><td>问题管理</td></tr>
+	</table>>,style="rounded",shape="none"];
+
+	cmdb_target[label=<<table border="1" cellborder="0" style="rounded" align="left"><tr><td bgcolor="yellow"><b><font point-size="17">纳管资源</font></b></td></tr>
+	<tr><td>建立模型</td></tr>
+	<tr><td>关联关系</td></tr>
+	<tr><td><b>情报中心</b></td></tr>
+	<tr><td><b><font point-size="13">自动化基石</font></b></td></tr>
+	</table>>,style="rounded",shape="none"];
+	
+	itop[label=<<table border="0" cellborder="0"><tr><td><img src="logo.svg"/></td></tr></table>>, shape="none"];
+	target[label=<<b>降本<br/>增效</b>>, fontsize="22", fontcolor="white", fillcolor="green:blue", style="filled", shape="doublecircle"];
+	itil -> itop;
+	cmdb -> itop;
+	itop -> {itil_target, cmdb_target};
+	{itil_target,cmdb_target} -> target;
+	
+}

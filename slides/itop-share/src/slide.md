@@ -7,6 +7,9 @@
 
 # 为什么要用 iTop
 
+## 为什么要用 iTop
+![](images/itop.pdf)
+
 ## 背景
 
 运维组作为研发和公司运维部门间的桥梁，负责团队资源管理，主要提供以下服务
@@ -74,6 +77,11 @@ CMDB 是 IT 组织的情报中心。丰富，完整，准确的 CMDB 数据是�
 :::
 :::::
 
+## iTop 2.7 界面
+
+## iTop 3.0 界面
+![iTop 3.0 界面](images/iTop3.pdf){width=85%}
+
 ## 数据模型
 
 ## 关联关系-影响分析
@@ -98,10 +106,34 @@ CMDB 是 IT 组织的情报中心。丰富，完整，准确的 CMDB 数据是�
 
 ## 自定义模型
 
-### 查看数据模型
+## 查看数据模型
 
-![](images/classlnk.pdf)
+::::{.columns}
+:::{.column}
+![管理工具->数据模型](images/datamodel.pdf)
+:::
+:::{.column}
+![关联类](images/classlnk.pdf)
 
+```{#fig:lifecycle .plot:dot caption="生命周期"}
+digraph G {
+	rankdir="LR";
+	//label="例行变更生命周期"
+	node[shape="circle"];
+	new [shape="doublecircle", label="新建"];
+	closed [shape="doublecircle", label="已关闭"];
+	planed [label="已计划 \n 和安排"];
+	
+	new->"已分配" [label="分配"];
+	"已分配" -> planed [label="计划"];
+	planed->"已实施" [label="实施"];
+	"已实施" -> closed [label="完成"];
+	"已实施" -> "已验收" [label="验收"];
+	"已验收" -> closed [label="完成"];
+}
+```
+:::
+::::
 ## 集成其他系统
 
 # 案例
