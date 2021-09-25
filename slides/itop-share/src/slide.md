@@ -19,8 +19,8 @@
 ![](images/api.svg){height=11%}
 
 - iTop 是一个开源的 ITSM 解决方案，提供一个灵活的 CMDB 管理配置项及其关系
-- iTop 基于 ITIL^[ITIL 是 CCTA（英国国家电脑局）于 1980 年开发的一套 IT 服务管理（IT Service Management，ITSM）标准库。它把英国在 IT 管理方面的方法归纳起来，变成规范，为企业的 IT 部门提供一套从计划、研发、实施到运维的标准方法]，能够管理用户请求、事件、问题、更改和服务目录
-- iTop 是使用 AGPLv3 协议开源的软件，可以从 Github 免费获取代码。
+- iTop 基于 ITIL^[ITIL 是 CCTA（英国国家电脑局）于 1980 年开发的一套 IT 服务管理（IT Service Management，ITSM）标准库。它把英国在 IT 管理方面的方法归纳起来，变成规范，为企业的 IT 部门提供一套从计划、研发、实施到运维的标准方法]，能够管理用户请求、事件、问题、变更和服务目录
+- iTop 是使用 AGPLv3 协议的开源软件，可以从 Github 免费获取代码
 - iTop 使用 PHP 语言和 MySQL 数据库
 - iTop 支持插件机制，提供 API，可以方便的扩展功能，集成其他系统
 - iTop Hub 提供插件下载（部分付费）以及完善的文档
@@ -34,19 +34,30 @@
 ## 为什么要用 iTop
 ![](images/itop.pdf)
 
-## iTop 功能特性
-
-### 关联关系-影响分析
+## iTop 功能特性 - 关联关系可视化分析
 
 ![](images/impacts.pdf)
 
-### 审计
+## iTop 功能特性- 审计
 
-### 报表
+\begin{center}
+\includegraphics[]{images/audit.pdf}
+\end{center}
 
-### OQL 查询
+## iTop 功能特性 - 仪表盘
+\begin{center}
+\includegraphics[]{images/dashboard.pdf}
+\end{center}
 
-### 批量导入导出
+## iTop 功能特性 - OQL 查询
+\begin{center}
+\includegraphics[]{images/oql.pdf}
+\end{center}
+## iTop 功能特性 - 批量导入导出
+
+\begin{center}
+\includegraphics[]{images/import.pdf}
+\end{center}
 
 # iTop 怎么用
 
@@ -71,14 +82,7 @@
 
 ## 查看数据模型
 
-::::{.columns}
-:::{.column}
-![管理工具->数据模型](images/datamodel.pdf)
-:::
-:::{.column}
-![关联类](images/classlnk.pdf)
-:::
-::::
+![](images/datamodel.pdf){height=85%}
 
 ## 生命周期
 
