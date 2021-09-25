@@ -1,0 +1,6 @@
+digraph G {
+	rankdir=LR;
+	xml[label=<<table border="0" cellborder="0"><tr><td><img src="xml.svg"/></td></tr></table>>, shape="none"];
+	php[label=<<table border="0" cellborder="0"><tr><td><img src="php.svg"/></td></tr></table>>, shape="none"];
+	xml->php[label="Compile"];
+}

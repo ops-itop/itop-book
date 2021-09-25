@@ -1,0 +1,64 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{fontawesome}
+\usepackage{xeCJK}
+\begin{document}
+
+\newcommand{\FTdirColor}{}
+\def\FTdirColor(#1,#2,#3,#4,#5){%
+  \FTfileColor(#1,{{\color{black!50!white}\faFolderOpen}\hspace{0.2em}#3},#4,#5)
+  (tmp.west)++(0.8em,-0.4em)node(#2){}
+  (tmp.west)++(1.5em,0)
+  ++(0,-1.3em) 
+}
+
+\newcommand{\FTdir}{}
+\def\FTdir(#1,#2,#3,#4){%
+  \FTdirColor(#1,#2,#3,black,#4)
+}
+
+\newcommand{\FTfileColor}{}
+\def\FTfileColor(#1,#2,#3,#4){%
+  node(tmp){}
+  (#1|-tmp)++(0.6em,0)
+  node(tmp)[anchor=west,#3]{\tt #2}
+  (#1)|-(tmp.west)
+  ++(0,-1.2em) 
+}
+
+\newcommand{\FTfile}{}
+\def\FTfile(#1,#2){%
+	\FTfileColor(#1,#2,black,)
+}
+
+\newcommand{\FTroot}{}
+\def\FTroot{tmp.west}
+
+\begin{tikzpicture}%
+  \draw[color=black!60!white]
+  \FTdir(\FTroot,root,iTop,){       % root: parent = \FTroot
+    \FTdir(root,application,application,UI)
+	\FTdir(root,conf,conf,配置文件){
+		\FTdirColor(conf,production,production,red,生产环境配置文件)
+		\FTdir(conf,production,toolkit,toolkit配置文件)
+	}
+	\FTdir(root,core,core,ORM Engine)
+	\FTdir(root,data,data,运行时数据，缓存，备份文件等)
+	\FTdir(root,datamodel,datamodel,数据模型)
+	\FTdirColor(root,env1,env-production,red,编译后的数据模型)
+	\FTdir(root,env2,env-toolkit,toolkit生成的编译后的数据模型)
+	\FTdirColor(root,extensions,extensions,red,插件目录)
+	\FTdir(root,log,log,错误日志，安装日志等)
+	\FTdir(root,pages,pages,UI页面)
+	\FTdir(root,portal,portal,工单门户界面)
+	\FTdir(root,setup,setup,安装工具)
+	\FTdir(root,webservices,webservices,API)
+
+%    ++(0,-0.5em)
+
+%    \FTdir(root,home,home){
+%      \FTdir(home,user,user)
+%    }
+  };
+  \end{tikzpicture}
+\end{document}

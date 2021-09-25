@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   aria-label="PHP"
+   role="img"
+   viewBox="0 0 56 56"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="php-svgrepo-com (3).svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   width="56"
+   height="56">
+  <metadata
+     id="metadata17">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs15" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1528"
+     inkscape:window-height="836"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="1.1757812"
+     inkscape:cx="28"
+     inkscape:cy="180.84503"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg11" />
+  <rect
+     width="56"
+     height="56"
+     rx="1.6406251%"
+     fill="#777bb3"
+     id="rect2"
+     x="0"
+     y="0"
+     style="stroke-width:0.109375" />
+  <g
+     stroke="#ffffff"
+     stroke-width="6"
+     id="g9"
+     transform="scale(0.109375)">
+    <path
+       id="a"
+       d="M 155,202 H 97 a 3,3 0 0 0 -3,2 L 67,345 c 0,3 3,3 3,3 h 30 c 3,0 3,-2 3,-2 l 7,-35 h 27 c 42,0 63,-28 68,-53 5,-25 1,-56 -50,-56 z m 13,54 c -4,19 -17,27 -35,27 h -18 l 11,-53 h 18 c 27,0 26,10 24,26 z" />
+    <path
+       d="m 275,311 c -4,0 -3,-4 -3,-4 l 12,-61 c 0,-8 6,-16 -18,-15 h -18 l -15,78 c 0,0 0,3 -4,3 h -29 c -3,0 -3,-3 -3,-3 l 28,-141 c 0,0 0,-2 4,-2 h 30 c 3,0 2,3 2,3 l -7,34 h 26 c 36,0 45,17 42,37 l -13,69 c 0,0 0,3 -5,3 z"
+       id="path5" />
+    <use
+       xlink:href="#a"
+       x="239"
+       id="use7"
+       y="0"
+       width="100%"
+       height="100%" />
+  </g>
+</svg>
