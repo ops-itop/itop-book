@@ -18,7 +18,7 @@
 ![](images/plugin.svg){height=11%}
 ![](images/api.svg){height=11%}
 
-- iTop 是一个开源的 ITSM 解决方案，提供一个灵活的 CMDB 管理配置项及其关系
+- iTop 是一个 ITSM 解决方案，提供一个灵活的 CMDB 管理配置项及其关系
 - iTop 基于 ITIL^[ITIL 是 CCTA（英国国家电脑局）于 1980 年开发的一套 IT 服务管理（IT Service Management，ITSM）标准库。它把英国在 IT 管理方面的方法归纳起来，变成规范，为企业的 IT 部门提供一套从计划、研发、实施到运维的标准方法]，能够管理用户请求、事件、问题、变更和服务目录
 - iTop 是使用 AGPLv3 协议的开源软件，可以从 Github 免费获取代码
 - iTop 使用 PHP 语言和 MySQL 数据库

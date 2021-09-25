@@ -27,7 +27,7 @@ digraph G {
 	<tr><td>请求管理</td></tr>
 	<tr><td>事件管理</td></tr>
 	<tr><td>变更管理</td></tr>
-	<tr><td>问题管理</td></tr>
+	<tr><td>服务目录</td></tr>
 	</table>>,style="rounded",shape="none"];
 
 	cmdb_target[label=<<table border="1" cellborder="0" style="rounded" align="left"><tr><td bgcolor="yellow"><b><font point-size="17">纳管资源</font></b></td></tr>
