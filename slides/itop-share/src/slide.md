@@ -33,7 +33,7 @@
 
 ## 为什么要用 iTop
 \begin{center}
-\includegraphics[]{images/itop.pdf}
+\includegraphics[height=0.85\textheight]{images/itop.pdf}
 \end{center}
 
 ## iTop 功能特性 - 关联关系可视化分析
@@ -90,9 +90,10 @@
 
 ## 生命周期
 
-```{#fig:userrequest2 .plot:dot height=85% caption="UserRequest 生命周期"}
+```{#fig:userrequest2 .plot:dot height=85%}
 digraph finite_state_machine {
 	rankdir=LR;
+	label="UserRequest 生命周期"
 	node [style=filled fillcolor="#ffffff" ];
 	new -> assigned [ label="指派"];
 	new -> escalated_tto [ label="超时"];
@@ -150,7 +151,7 @@ digraph finite_state_machine {
 ## iTop 3.0 界面
 
 \begin{center}
-\includegraphics[]{images/iTop3.pdf}
+\includegraphics[height=0.85\textheight]{images/iTop3.pdf}
 \end{center}
 
 ## 参考资料
