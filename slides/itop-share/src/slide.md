@@ -85,7 +85,7 @@
 
 ## 查看数据模型
 \begin{center}
-\includegraphics[0.85\textheight]{images/datamodel.pdf}
+\includegraphics[height=0.85\textheight]{images/datamodel.pdf}
 \end{center}
 
 ## 生命周期
