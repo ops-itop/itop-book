@@ -32,11 +32,14 @@
 \end{center}
 
 ## 为什么要用 iTop
-![](images/itop.pdf)
+\begin{center}
+\includegraphics[]{images/itop.pdf}
+\end{center}
 
 ## iTop 功能特性 - 关联关系可视化分析
-
-![](images/impacts.pdf)
+\begin{center}
+\includegraphics[]{images/impacts.pdf}
+\end{center}
 
 ## iTop 功能特性- 审计
 
@@ -81,8 +84,9 @@
 ## 自定义模型
 
 ## 查看数据模型
-
-![](images/datamodel.pdf){height=85%}
+\begin{center}
+\includegraphics[0.85\textheight]{images/datamodel.pdf}
+\end{center}
 
 ## 生命周期
 
@@ -130,7 +134,7 @@ digraph finite_state_machine {
 }
 ```
 
-## 开发辅组工具 - Toolkit
+## 开发辅助工具 - Toolkit
 \begin{center}
 \includegraphics[]{images/toolkit-page.pdf}
 \end{center}
@@ -144,7 +148,10 @@ digraph finite_state_machine {
 ## 央行金融业数据上报
 
 ## iTop 3.0 界面
-![iTop 3.0 界面](images/iTop3.pdf){width=90%}
+
+\begin{center}
+\includegraphics[]{images/iTop3.pdf}
+\end{center}
 
 ## 参考资料
 
