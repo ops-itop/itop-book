@@ -8,6 +8,7 @@ digraph G {
 	<tr><td>效率低</td></tr>
 	<tr><td>沟通成本高</td></tr>
 	<tr><td>难统计</td></tr>
+	<tr><td>客户满意度低</td></tr>
 	</table>>,style="rounded",shape="none"];
 	problem2[label=<<table border="1" cellborder="0" style="rounded" align="left"><tr><td bgcolor="yellow"><b><font point-size="17">Wiki管理资源</font></b></td></tr>
 	<tr><td>难准确</td></tr>
