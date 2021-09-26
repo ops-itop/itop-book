@@ -130,6 +130,11 @@ digraph finite_state_machine {
 }
 ```
 
+## 开发辅组工具 - Toolkit
+\begin{center}
+\includegraphics[]{images/toolkit-page.pdf}
+\end{center}
+
 ## 集成其他系统
 
 # 案例
