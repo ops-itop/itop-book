@@ -7,7 +7,7 @@
 # iTop 是什么
 
 ## iTop 是什么
-
+<!--
 ![](images/logo.svg){height=11%}
 ![](images/itil.svg){height=11%}
 ![](images/cmdb.svg){height=11%}
@@ -17,13 +17,25 @@
 ![](images/agpl.svg){height=11%}
 ![](images/plugin.svg){height=11%}
 ![](images/api.svg){height=11%}
-
+-->
+- iTop 表示  **IT Operational Portal**
 - iTop 是一个 ITSM 解决方案，提供一个灵活的 CMDB 管理配置项及其关系
 - iTop 基于 ITIL^[ITIL 是 CCTA（英国国家电脑局）于 1980 年开发的一套 IT 服务管理（IT Service Management，ITSM）标准库。它把英国在 IT 管理方面的方法归纳起来，变成规范，为企业的 IT 部门提供一套从计划、研发、实施到运维的标准方法]，能够管理用户请求、事件、问题、变更和服务目录
 - iTop 是使用 AGPLv3 协议的开源软件，可以从 Github 免费获取代码
 - iTop 使用 PHP 语言和 MySQL 数据库
 - iTop 支持插件机制，提供 API，可以方便的扩展功能，集成其他系统
+
+<!--
 - iTop Hub 提供插件下载（部分付费）以及完善的文档
+-->
+
+## iTop 能做什么
+
+- 记录 IT 基础设施以及基础设施的各个部分之间的所有关联关系（服务器、应用程序、网络设备、虚拟机、联系人、位置。..）
+- 管理事件，用户请求，变更计划。..
+- 记录与外部供应商的 IT 服务和合同，包括服务等级协议（SLA）
+- 以手动或脚本方式导出所有信息
+- 批量导入（手动或使用脚本）或同步来自外部系统的任何数据
 
 ## iTop 界面
 
@@ -56,6 +68,7 @@
 \begin{center}
 \includegraphics[]{images/oql.pdf}
 \end{center}
+
 ## iTop 功能特性 - 批量导入导出
 
 \begin{center}
@@ -64,7 +77,13 @@
 
 # iTop 怎么用
 
-## 收益
+## CMDB 功能
+
+\begin{center}
+\includegraphics[]{images/cmdb.png}
+\end{center}
+
+## 服务管理
 
 # iTop 定制开发
 
@@ -142,7 +161,7 @@ digraph finite_state_machine {
 
 ## 集成其他系统
 
-# 案例
+# 案例及插件介绍
 
 ## URL 自助监控
 
