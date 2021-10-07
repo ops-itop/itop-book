@@ -31,8 +31,8 @@
 
 ## iTop 能做什么
 
-- 记录 IT 基础设施以及基础设施的各个部分之间的所有关联关系（服务器、应用程序、网络设备、虚拟机、联系人、位置。..）
-- 管理事件，用户请求，变更计划。..
+- 记录 IT 基础设施以及基础设施的各个部分之间的所有关联关系（服务器、应用程序、网络设备、虚拟机、联系人、位置 ...）
+- 管理事件，用户请求，变更计划 ...
 - 记录与外部供应商的 IT 服务和合同，包括服务等级协议（SLA）
 - 以手动或脚本方式导出所有信息
 - 批量导入（手动或使用脚本）或同步来自外部系统的任何数据
@@ -80,10 +80,13 @@
 ## CMDB 功能
 
 \begin{center}
-\includegraphics[]{images/cmdb.png}
+\includegraphics[height=0.9\textheight]{images/cmdb.png}
 \end{center}
 
 ## 服务管理
+\begin{center}
+\includegraphics[]{images/itsm.jpg}
+\end{center}
 
 # iTop 定制开发
 
@@ -94,13 +97,33 @@
 ![](images/itop-architecture.pdf)
 :::
 :::{.column}
-- 模型定制
-- UI 定制
+橙色部分是可以自定义的部分
+
+- 扩展或修改数据模型并调整控制台的行为
+- 创建您自己的安全方案
+- 更改客户门户或开发新的门户
+- 通过插件扩展通用用户界面
 :::
 ::::
 
-## 数据存储方式
-## 自定义模型
+## 模型编译
+
+::::{.columns}
+:::{.column width=42%}
+![](images/xml.pdf){height=90%}
+:::
+:::{.column width=8%}
+
+**Compile**
+![](images/arrow.svg){width=90%}
+Setup
+
+Toolkit
+:::
+:::{.column width=40%}
+![](images/compiled.pdf){height=90%}
+:::
+::::
 
 ## 查看数据模型
 \begin{center}
@@ -112,8 +135,10 @@
 ```{#fig:userrequest2 .plot:dot height=85%}
 digraph finite_state_machine {
 	rankdir=LR;
-	label="UserRequest 生命周期"
-	node [style=filled fillcolor="#ffffff" ];
+	fontname="思源宋体";
+	label="\n\n\nUserRequest 生命周期"
+	node [style=filled fillcolor="#ffffff" fontname="思源宋体"];
+	edge [fontname="思源宋体"];
 	new -> assigned [ label="指派"];
 	new -> escalated_tto [ label="超时"];
 	new -> waiting_for_approval [ label="等待审批"];
@@ -160,12 +185,78 @@ digraph finite_state_machine {
 \end{center}
 
 ## 集成其他系统
+::::{.columns}
+:::{.column}
+REST/JSON services
+
+- 列出支持的操作：list_operations
+- 查：core/get
+- 增：core/create
+- 改：core/update
+- 删：core/delete
+- 查关联关系：core/get_related
+- 生命周期操作：core/apply_stimulus
+- 通过插件扩展的自定义操作 ...
+:::
+:::{.column}
+```{.json}
+{
+   "operation": "core/get",
+   "class": "Person",
+   "key": "SELECT Person WHERE email LIKE '%.com'",
+   "output_fields": "friendlyname, email"
+}
+```
+:::
+::::
+
+```{#lst:curl .bash}
+curl -X POST  -F 'version=1.3' -F 'auth_user=admin' -F 'auth_pwd=admin' http://itop-domain/webservices/rest.php -F 'json_data=@./json-operation.json'
+```
 
 # 案例及插件介绍
 
 ## URL 自助监控
+\begin{center}
+\includegraphics[height=0.9\textheight]{images/itop-url.png}
+\end{center}
 
 ## 央行金融业数据上报
+
+::::{.columns}
+:::{.column}
+```{.plot:dot}
+digraph cmdb {
+    rankdir=TB;
+    node[shape=record];
+    FunctionalCI->{BusinessProcess,PhysicalDevice,ApplicationSoluion};
+    PhysicalDevice->{TelephonyCI,ConnectableCI,Rack};
+    TelephonyCI->{Phone,MobilePhone};
+    ConnectableCI->{PC,Printer,DatacenterDevice};
+    DatacenterDevice->{Server,NetworkDevice};
+}
+```
+:::
+:::{.column}
+![](images/jrt0210.jpg)
+:::
+::::
+
+## TeemIP - IPAM 解决方案
+
+::::{.columns}
+:::{.column}
+![](images/teemip.pdf)
+:::
+:::{.column}
+![](images/subnet.pdf)
+:::
+::::
+
+## Kubernetes 管理系统
+\begin{center}
+\includegraphics[height=0.9\textheight]{images/itop-k8s.png}
+\end{center}
 
 ## iTop 3.0 界面
 
