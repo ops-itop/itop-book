@@ -99,28 +99,29 @@
 :::{.column}
 橙色部分是可以自定义的部分
 
-- 扩展或修改数据模型并调整控制台的行为
-- 创建您自己的安全方案
-- 更改客户门户或开发新的门户
-- 通过插件扩展通用用户界面
+- 新增或修改数据模型
+- 创建自定义角色
+- 自定义门户或开发新的门户
+- 通过插件扩展用户界面
 :::
 ::::
 
 ## 模型编译
 
 ::::{.columns}
-:::{.column width=42%}
+:::{.column width=44%}
 ![](images/xml.pdf){height=90%}
 :::
-:::{.column width=8%}
+:::{.column width=5%}
+ 
+  
+ 
 
-**Compile**
-![](images/arrow.svg){width=90%}
 Setup
-
+![](images/arrow.svg){width=90%}
 Toolkit
 :::
-:::{.column width=40%}
+:::{.column width=42%}
 ![](images/compiled.pdf){height=90%}
 :::
 ::::
@@ -245,10 +246,10 @@ digraph cmdb {
 ## TeemIP - IPAM 解决方案
 
 ::::{.columns}
-:::{.column}
+:::{.column width=43%}
 ![](images/teemip.pdf)
 :::
-:::{.column}
+:::{.column width=50%}
 ![](images/subnet.pdf)
 :::
 ::::
