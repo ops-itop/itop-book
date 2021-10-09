@@ -90,6 +90,17 @@
 
 # iTop 定制开发
 
+## iTop 特点 - 面向对象的模型设计
+\begin{center}
+\includegraphics[]{images/inherit.pdf}
+\end{center}
+
+## iTop 特点 - 插件式开发
+
+\begin{center}
+\includegraphics[]{images/compare.pdf}
+\end{center}
+
 ## iTop 架构
 
 ::::{.columns}
@@ -184,6 +195,36 @@ digraph finite_state_machine {
 \begin{center}
 \includegraphics[]{images/toolkit-page.pdf}
 \end{center}
+
+## 插件开发流程
+
+```{.plot:dot}
+digraph graphname {
+    rankdir = LR;
+	fontname="思源宋体"
+	node[fontname="思源宋体"]
+	edge[fontname="思源宋体"]
+    start [shape="doublecircle",label="开始"]
+    end [shape="doublecircle",label="完成"]
+    
+    empty [shape=record, label="创建 \n 空模块"]
+    setup [shape=record, label="安装 \n 空模块", style=filled, fillcolor=cyan]
+    develop [shape=record, label="开发"]
+    toolkit [shape=diamond, label="toolkit\n 编译",style=filled, fillcolor=cyan]
+    uat [shape=diamond, label="功能 \n 测试"]
+    release [shape=record,label="发布"];
+    
+    start -> empty;
+    empty -> setup -> develop;
+    develop -> toolkit;
+    toolkit -> develop [label="报错"];
+    toolkit -> uat [label="正常"];
+    uat -> develop [label="异常"];
+    uat -> release [label="正常"];
+    release -> end;
+    label="\n\niTop 插件开发一般步骤";
+}
+```
 
 ## 集成其他系统
 ::::{.columns}

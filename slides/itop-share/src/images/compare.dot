@@ -1,0 +1,17 @@
+digraph graphname {
+    rankdir = LR;
+    start [shape=none,fontname="思源宋体",label=<<table ALIGN="LEFT" border="0" CELLBORDER="1" CELLSPACING="0">
+		<tr>
+			<td></td><td><img scale="true" src="itop-logo.svg"/></td><td><img src="cmdbuild.png"/></td><td><img src="bk-cmdb.png"/></td>
+		</tr>
+		<tr>
+			<td>模型继承</td><td BGCOLOR="CYAN">支持</td><td BGCOLOR="CYAN">支持</td><td>不支持</td>
+		</tr>
+		<tr>
+			<td>建模方式</td><td>插件代码</td><td BGCOLOR="cyan3">界面</td><td BGCOLOR="cyan3">界面</td>
+		</tr>
+		<tr>
+			<td>优缺点</td><td ALIGN="LEFT">代码方式定制能力强，容易维护，<BR/>并且可以方便的复用社区成果</td><td>上手简单，但是维护成本较高。<BR/>不支持插件，定制能力弱</td><td>性能有优势。无模型继承，表现力弱。<BR/>不支持插件，定制能力弱</td>
+		</tr>
+	</table>>]
+}

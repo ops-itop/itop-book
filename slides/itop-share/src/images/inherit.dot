@@ -1,0 +1,74 @@
+digraph graphname {
+    node [shape=record]
+	fontname="思源宋体"
+    subgraph cluster_0 {
+        label="继承关系"
+        color=white
+        functionalci [label="FunctionalCI"]
+        physicaldevice [label="PhysicalDevice"]
+        //connectableci [label="ConnectableCI"]
+        datacenterdevice [label="DatacenterDevice"]
+        server [label="Server",style=filled,fillcolor=cyan]
+        networkdevice [label="NetworkDevice",style=filled,fillcolor=aquamarine]
+        
+        functionalci -> physicaldevice -> datacenterdevice -> {server,networkdevice}
+    }
+    
+    subgraph cluster_1 {
+        label="数据存储"
+        color=white
+        tb_functionalci [shape=none, label=<<table border="0" cellborder="1" cellspacing="0">
+			<tr>
+				<td>table_name</td><td>id</td><td>name</td><td>finalclass</td>
+			</tr>
+			<tr>
+				<td ROWSPAN="2">functionalci</td><td bgcolor="cyan">1</td><td bgcolor="cyan">Server1</td><td  bgcolor="cyan">Server</td>
+			</tr>
+			<tr>
+				<td bgcolor="aquamarine">2</td><td bgcolor="aquamarine">Router1</td><td bgcolor="aquamarine">NetworkDevice</td>
+			</tr>
+		</table>>]
+        tb_physicaldevice [shape=none, label=<<table border="0" cellborder="1" cellspacing="0">
+			<tr>
+				<td>table_name</td><td>id</td><td>serialnumber</td><td>finalclass</td>
+			</tr>
+			<tr>
+				<td ROWSPAN="2">physicaldevice</td><td bgcolor="cyan">1</td><td bgcolor="cyan">SN0001</td><td  bgcolor="cyan">Server</td>
+			</tr>
+			<tr>
+				<td bgcolor="aquamarine">2</td><td bgcolor="aquamarine">SN9001</td><td bgcolor="aquamarine">NetworkDevice</td>
+			</tr>
+		</table>>]
+        tb_datacenterdevice [shape=none, label=<<table border="0" cellborder="1" cellspacing="0">
+			<tr>
+				<td>table_name</td><td>id</td><td>rack_id</td><td>finalclass</td>
+			</tr>
+			<tr>
+				<td ROWSPAN="2">datacenterdevice</td><td bgcolor="cyan">1</td><td bgcolor="cyan">3</td><td  bgcolor="cyan">Server</td>
+			</tr>
+			<tr>
+				<td bgcolor="aquamarine">2</td><td bgcolor="aquamarine">4</td><td bgcolor="aquamarine">NetworkDevice</td>
+			</tr>
+		</table>>]
+        tb_server [shape=none, label=<<table border="0" bgcolor="cyan" cellborder="1" cellspacing="0">
+			<tr>
+				<td>table_name</td><td>id</td><td>osversion_id</td>
+			</tr>
+			<tr>
+				<td ROWSPAN="2">server</td><td>1</td><td>4</td>
+			</tr>
+		</table>>]
+        tb_networkdevice [shape=none, label=<<table bgcolor="aquamarine" border="0" cellborder="1" cellspacing="0">
+			<tr>
+				<td>table_name</td><td>id</td><td>iosversion_id</td>
+			</tr>
+			<tr>
+				<td ROWSPAN="2">networkdevice</td><td>2</td><td>5</td>
+			</tr>
+		</table>>]
+        tb_functionalci -> tb_physicaldevice -> tb_datacenterdevice -> {tb_server,tb_networkdevice}
+    }
+    
+    label="\niTop模型继承和存储方式\n(为演示有所简化)"
+    //datacenterdevice:e -> tb_datacenterdevice:w
+}
