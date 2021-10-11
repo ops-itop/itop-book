@@ -5,13 +5,17 @@ digraph graphname {
         label="继承关系"
         color=white
         functionalci [label="FunctionalCI"]
+		app [label="ApplicationSoluion"]
         physicaldevice [label="PhysicalDevice"]
         //connectableci [label="ConnectableCI"]
+		pc [label="PC"]
         datacenterdevice [label="DatacenterDevice"]
         server [label="Server",style=filled,fillcolor=cyan]
         networkdevice [label="NetworkDevice",style=filled,fillcolor=aquamarine]
         
         functionalci -> physicaldevice -> datacenterdevice -> {server,networkdevice}
+		functionalci -> app
+		physicaldevice -> pc
     }
     
     subgraph cluster_1 {
